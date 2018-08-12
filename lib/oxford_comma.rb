@@ -15,6 +15,17 @@ def oxford_comma(array)
         sentence += " #{array[i]},"
       end
       i += 1
+  sentece = ""
+  if anrray.length == 1
+    return array[0]
+  else
+    i = 0
+    while i < array.length
+      if i == array.length - 1
+        sentence += "#{and array[i]}"
+      else
+        sentence += "#{array[i]}"
+      end
     end
   end
   sentence
